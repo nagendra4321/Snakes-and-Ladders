@@ -1,0 +1,104 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="snakes.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded_1">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="0,0,-52,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- LOCALIZATION NOTE:
+            To localize the displayed strings copy their values to appropriately named
+            keys in the app's neutral language resource file (AppResources.resx) then
+            replace the hard-coded text value between the attributes' quotation marks
+            with the binding clause whose path points to that string name.
+
+            For example:
+
+                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+
+            This binding points to the template's string resource named "ApplicationTitle".
+
+            Adding supported languages in the Project Properties tab will create a
+            new resx file per language that can carry the translated values of your
+            UI strings. The binding in these examples will cause the value of the
+            attributes to be drawn from the .resx file that matches the
+            CurrentUICulture of the app at run time.
+         -->
+
+        <!--TitlePanel contains the name of the application and page title-->
+        
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,49,12,0" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="91*"/>
+                <RowDefinition Height="628*"/>
+            </Grid.RowDefinitions>
+            <Image x:Name="img1" HorizontalAlignment="Left" Height="724" VerticalAlignment="Top" Width="500" Margin="8,-15,0,0" Source="/Assets/snakes-and-ladders.jpg" Grid.RowSpan="2"/>
+            <Button x:Name="pnt1" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="25,523,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt2" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="98,523,0,0" Height="66" Width="65" Opacity="0"  Grid.Row="1"/>
+            <Button x:Name="pnt3" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="166,523,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt4" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="235,523,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt5" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="306,520,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt6" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="378,522,0,0" Height="66" Width="65" Opacity="0" RenderTransformOrigin="0.051,0.233" Grid.Row="1"/>
+            <Button x:Name="pnt12" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="21,404,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt11" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95,398,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt9" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="237,403,0,0" Height="66" Width="65" Opacity="0" RenderTransformOrigin="1.54,0.566" Grid.Row="1"/>
+            <Button x:Name="pnt8" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="307,405,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt7" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="380,401,0,0" Height="66" Width="65" Opacity="0" RenderTransformOrigin="2.261,0.646" Grid.Row="1"/>
+            <Button x:Name="pnt13" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="25,285,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt14" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="94,286,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt15" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="166,284,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt16" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="237,285,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt17" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="310,285,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt18" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="379,286,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt24" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="25,172,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt23" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95,169,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt22" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="166,168,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt21" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="238,170,0,0" Height="66" Width="65" Opacity="0" RenderTransformOrigin="-0.73,0.482" Grid.Row="1"/>
+            <Button x:Name="pnt20" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="306,169,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt19" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="379,169,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt25" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="26,50,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt26" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="96,45,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt27" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="168,48,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt28" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="237,44,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt29" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="307,49,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt30" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="380,50,0,0" Height="66" Width="65" Opacity="0" Grid.Row="1"/>
+            <Button x:Name="pnt36" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="24,23,0,0" Height="66" Width="65" Opacity="0"/>
+            <Button x:Name="pnt35" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95,24,0,0" Height="66" Width="65" Opacity="0"/>
+            <Button x:Name="pnt34" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="167,22,0,0" Height="66" Width="65" Opacity="0"/>
+            <Button x:Name="pnt33" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="236,25,0,0" Height="66" Width="65" Opacity="0"/>
+            <Button x:Name="pnt32" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="306,24,0,0" Height="66" Width="65" Opacity="0"/>
+            <Button x:Name="pnt31" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="380,27,0,0" Height="66" Width="65" Opacity="0"/>
+            <Button x:Name="pnt10" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="166,405,0,0" Height="66" Width="65" Opacity="0" RenderTransformOrigin="1.54,0.566" Grid.Row="1"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="549,-16,-81,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="239" Width="12"/>
+        <TextBlock HorizontalAlignment="Left" Margin="531,243,-63,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="239" Width="12"/>
+        <TextBlock x:Name="lbturn" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="76,152,0,0" Height="127" Width="315" Foreground="#FF1F33F3" FontSize="50" Grid.RowSpan="2" Tap="lbturn_Tap"/>
+        <Grid x:Name="ContentPanelDice" Margin="12,10,12,0" Grid.RowSpan="2">
+            <Image x:Name="imgdice" HorizontalAlignment="Left" Height="135" Margin="160,247,0,0" VerticalAlignment="Top" Width="136" Tap="imgdice_Tap" Source=""/>
+        </Grid>
+        <!--Uncomment to see an alignment grid to help ensure your controls are
+            aligned on common boundaries.  The image has a top margin of -32px to
+            account for the System Tray. Set this to 0 (or remove the margin altogether)
+            if the System Tray is hidden.
+
+            Before shipping remove this XAML and the image itself.-->
+        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
+    </Grid>
+
+</phone:PhoneApplicationPage>
